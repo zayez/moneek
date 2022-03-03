@@ -1,15 +1,21 @@
 .form {
   border: 0px solid var(--rossa);
   display: flex;
+  flex-flow: column;
+  flex: auto;
+  align-items: center;
 }
 
 .form > * {
   margin-right: 0.2em;
+  width: 10em !important;
 }
 
 .form > :nth-child(1) {
-  flex: 2;
+  /* flex: 2; */
+  /* flex: 1; */
 }
 .form > :nth-child(2) {
-  flex: 0.5;
+  /* flex: 0.5; */
+  /* flex: 1; */
 }
