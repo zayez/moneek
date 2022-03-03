@@ -20,7 +20,7 @@ const Target = ({
       const data = await fetchData(url)
       const quote =
         data[baseCurrency.toLowerCase()] || data[targetCurrency.toLowerCase()]
-      setTargetValue(baseValue * quote)
+      setTargetValue((baseValue * quote).toFixed(2))
     } else {
       setTargetValue("")
     }

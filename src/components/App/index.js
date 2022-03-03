@@ -16,23 +16,25 @@ function App() {
   const [targetCurrency, setTargetCurrency] = useState(Currency.Dolar.abbr)
 
   return (
-    <div className="App">
-      <Header />
-      <Base
-        baseValue={baseValue}
-        baseCurrency={baseCurrency}
-        setBaseValue={setBaseValue}
-        setBaseCurrency={setBaseCurrency}
-      />
-      <Target
-        baseValue={baseValue}
-        baseCurrency={baseCurrency}
-        targetValue={targetValue}
-        targetCurrency={targetCurrency}
-        targetCurrency={targetCurrency}
-        setTargetValue={setTargetValue}
-        setTargetCurrency={setTargetCurrency}
-      />
+    <div className="app">
+      <div className="app-container">
+        <Header />
+        <Base
+          baseValue={baseValue}
+          baseCurrency={baseCurrency}
+          setBaseValue={setBaseValue}
+          setBaseCurrency={setBaseCurrency}
+        />
+        <Target
+          baseValue={baseValue}
+          baseCurrency={baseCurrency}
+          targetValue={targetValue}
+          targetCurrency={targetCurrency}
+          targetCurrency={targetCurrency}
+          setTargetValue={setTargetValue}
+          setTargetCurrency={setTargetCurrency}
+        />
+      </div>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { Currencies } from "../../types/Currency"
 
 function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
   return (
-    <div className="base-container">
+    <div className="base-container base">
       <h2>Base</h2>
       <input
         id="txtBase"
