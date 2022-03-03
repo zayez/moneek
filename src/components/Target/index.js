@@ -28,18 +28,22 @@ const Target = ({
 
   return (
     <div className="target">
-      <h2>Target</h2>
-      <input type="text" value={targetValue} readOnly={true} />
-      <select
-        value={targetCurrency}
-        onChange={(e) => setTargetCurrency(e.target.value)}
-      >
-        {Currencies.map((currency, i) => (
-          <option key={i} value={currency.abbr}>
-            {currency.currency}
-          </option>
-        ))}
-      </select>
+      <div className="container">
+        <h2>Target</h2>
+        <div className="form">
+          <input type="text" value={targetValue} readOnly={true} />
+          <select
+            value={targetCurrency}
+            onChange={(e) => setTargetCurrency(e.target.value)}
+          >
+            {Currencies.map((currency, i) => (
+              <option key={i} value={currency.abbr}>
+                {currency.currency}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
     </div>
   )
 }

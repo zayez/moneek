@@ -1,6 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
+import "./styles/variables.css"
+import "./styles/form.css"
 import IMask from "imask"
 import App from "./components/App"
 

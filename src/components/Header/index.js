@@ -3,7 +3,9 @@ import "./index.css"
 function Header() {
   return (
     <div className="header">
-      <h2>Header</h2>
+      <div className="container">
+        <h2>Header</h2>
+      </div>
     </div>
   )
 }

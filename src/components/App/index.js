@@ -17,24 +17,22 @@ function App() {
 
   return (
     <div className="app">
-      <div className="app-container">
-        <Header />
-        <Base
-          baseValue={baseValue}
-          baseCurrency={baseCurrency}
-          setBaseValue={setBaseValue}
-          setBaseCurrency={setBaseCurrency}
-        />
-        <Target
-          baseValue={baseValue}
-          baseCurrency={baseCurrency}
-          targetValue={targetValue}
-          targetCurrency={targetCurrency}
-          targetCurrency={targetCurrency}
-          setTargetValue={setTargetValue}
-          setTargetCurrency={setTargetCurrency}
-        />
-      </div>
+      <Header />
+      <Base
+        baseValue={baseValue}
+        baseCurrency={baseCurrency}
+        setBaseValue={setBaseValue}
+        setBaseCurrency={setBaseCurrency}
+      />
+      <Target
+        baseValue={baseValue}
+        baseCurrency={baseCurrency}
+        targetValue={targetValue}
+        targetCurrency={targetCurrency}
+        targetCurrency={targetCurrency}
+        setTargetValue={setTargetValue}
+        setTargetCurrency={setTargetCurrency}
+      />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 .base {
-  background: hsl(250, 50%, 50%);
-  border: 2px solid white;
+  background: var(--major);
+  padding: 2em;
+  color: var(--light);
   height: 30vh;
 }

@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +14,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+input,
+select {
+  border-radius: 0;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid var(--gray);
+  font-size: 1.5em;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px #0066ff;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin-bottom: 1rem;
 }

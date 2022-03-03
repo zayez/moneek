@@ -1,5 +1,6 @@
 .target {
-  background: hsl(100, 100%, 100%);
-  border: 1px solid hsl(250, 50%, 50%);
   height: 30vh;
+  padding: 2em;
+  background: var(--light);
+  color: var(--dark);
 }
