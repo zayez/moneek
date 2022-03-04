@@ -4,3 +4,24 @@
   color: var(--light);
   height: 40vh;
 }
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon {
+  border: 3px solid var(--blu-dark);
+  border-radius: 10px;
+  width: 5em;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  fill: var(--blu-dark);
+  background: var(--white);
+}
+
+.icon:hover {
+  cursor: pointer;
+  fill: var(--blu-light);
+  border-color: var(--blu-light);
+}

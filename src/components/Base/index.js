@@ -1,6 +1,7 @@
 import "./index.css"
 
 import { Currencies } from "../../types/Currency"
+import SwapIcon from "../../icons/SwapIcon"
 
 function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
   return (
@@ -25,6 +26,9 @@ function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
             ))}
           </select>
         </div>
+      </div>
+      <div className="icon-wrapper">
+        <SwapIcon />
       </div>
     </div>
   )
