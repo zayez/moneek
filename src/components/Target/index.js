@@ -31,7 +31,13 @@ const Target = ({
       <div className="container">
         <h2>Target</h2>
         <div className="form">
-          <input type="text" value={targetValue} readOnly={true} />
+          <input
+            id="txtTarget"
+            type="text"
+            value={targetValue}
+            readOnly={true}
+            disabled
+          />
           <select
             value={targetCurrency}
             onChange={(e) => setTargetCurrency(e.target.value)}

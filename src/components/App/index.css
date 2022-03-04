@@ -1,9 +1,27 @@
 .container {
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 20em;
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100%;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 40em;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .container {
+    max-width: 45em;
+  }
+}
+
+@media screen and (min-width: 1178px) {
+  .container {
+    max-width: 50em;
+  }
 }

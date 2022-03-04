@@ -1,6 +1,11 @@
 .target {
-  height: 30vh;
-  padding: 2em;
+  height: 40vh;
+  padding: 4em;
   background: var(--light);
   color: var(--dark);
+}
+
+#txtTarget {
+  border: none;
+  border-bottom: 2px solid var(--gray);
 }

@@ -1,6 +1,6 @@
 .base {
   background: var(--major);
-  padding: 2em;
+  padding: 4em;
   color: var(--light);
-  height: 30vh;
+  height: 40vh;
 }
