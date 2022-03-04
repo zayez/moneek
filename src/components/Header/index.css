@@ -1,6 +1,23 @@
 .header {
-  border-bottom: 1px solid var(--dark);
-  padding: 2em 0;
+  padding: 1rem 0;
   background: var(--major);
   color: var(--light);
+  border-bottom: 1px solid var(--blu-dark);
+  background-color: var(--blu-dark);
+}
+
+.logo {
+  margin: 0;
+  text-align: right;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.logo a:hover {
+  text-decoration: overline;
 }

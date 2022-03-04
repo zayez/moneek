@@ -1,5 +1,6 @@
 :root {
   --blu: hsl(250, 50%, 50%);
+  --blu-dark: hsl(250, 50%, 46%);
   --rossa: hsl(353, 50%, 50%);
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 5%, 15%);

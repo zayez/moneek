@@ -15,6 +15,11 @@ body {
   font-size: 12px;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 14px;
@@ -31,11 +36,6 @@ body {
   body {
     font-size: 16px;
   }
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 h1 {

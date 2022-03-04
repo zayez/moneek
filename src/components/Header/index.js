@@ -4,7 +4,9 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <h2>Header</h2>
+        <h2 className="logo">
+          <a href="#">moneek</a>
+        </h2>
       </div>
     </div>
   )
