@@ -1,19 +1,20 @@
+import { useState } from "react"
 import "./index.css"
-
 import Header from "../Header"
 import Base from "../Base"
 import Target from "../Target"
-
-import { useState } from "react"
-
-import { Currency } from "../../types/Currency"
+import Currency from "../../types/Currency"
 
 function App() {
   const [baseValue, setBaseValue] = useState("")
   const [targetValue, setTargetValue] = useState("")
 
-  const [baseCurrency, setBaseCurrency] = useState(Currency.Real.abbr)
-  const [targetCurrency, setTargetCurrency] = useState(Currency.Dolar.abbr)
+  const [baseCurrency, setBaseCurrency] = useState(
+    Currency.Real.abbr.toLowerCase()
+  )
+  const [targetCurrency, setTargetCurrency] = useState(
+    Currency.Dolar.abbr.toLowerCase()
+  )
 
   return (
     <div className="app">

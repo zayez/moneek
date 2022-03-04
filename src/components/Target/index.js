@@ -1,9 +1,10 @@
 import "./index.css"
-import { Currencies } from "../../types/Currency"
 
 import { useEffect } from "react"
+import getCurrencies from "../../helpers/getCurrencies"
 
 const baseUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies`
+const Currencies = getCurrencies()
 
 const Target = ({
   baseValue,
@@ -44,7 +45,7 @@ const Target = ({
           >
             {Currencies.map((currency, i) => (
               <option key={i} value={currency.abbr}>
-                {currency.currency}
+                {currency.abbr.toUpperCase()}
               </option>
             ))}
           </select>

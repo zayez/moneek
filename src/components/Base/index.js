@@ -1,7 +1,8 @@
 import "./index.css"
 
-import { Currencies } from "../../types/Currency"
 import SwapIcon from "../../icons/SwapIcon"
+import getCurrencies from "../../helpers/getCurrencies"
+const Currencies = getCurrencies()
 
 function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
   return (
@@ -21,7 +22,7 @@ function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
           >
             {Currencies.map((currency, i) => (
               <option key={i} value={currency.abbr}>
-                {currency.currency}
+                {currency.abbr.toUpperCase()}
               </option>
             ))}
           </select>
