@@ -5,7 +5,6 @@ const getCurrencies = () => {
     return { abbr: currency, currency: CurrenciesObj[currency] }
   })
 
-  console.log(arr)
   return arr
 }
 

@@ -16,6 +16,12 @@ function App() {
     Currency.Dolar.abbr.toLowerCase()
   )
 
+  const handleSwap = () => {
+    const temp = targetCurrency
+    setTargetCurrency(baseCurrency)
+    setBaseCurrency(temp)
+  }
+
   return (
     <div className="app">
       <Header />
@@ -24,6 +30,7 @@ function App() {
         baseCurrency={baseCurrency}
         setBaseValue={setBaseValue}
         setBaseCurrency={setBaseCurrency}
+        handleSwap={handleSwap}
       />
       <Target
         baseValue={baseValue}

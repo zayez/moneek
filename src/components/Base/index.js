@@ -4,7 +4,7 @@ import SwapIcon from "../../icons/SwapIcon"
 import getCurrencies from "../../helpers/getCurrencies"
 const Currencies = getCurrencies()
 
-function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
+function Base({ baseCurrency, setBaseValue, setBaseCurrency, handleSwap }) {
   return (
     <div className="base">
       <div className="container">
@@ -29,7 +29,7 @@ function Base({ baseCurrency, setBaseValue, setBaseCurrency }) {
         </div>
       </div>
       <div className="icon-wrapper">
-        <SwapIcon />
+        <SwapIcon handleSwap={handleSwap} />
       </div>
     </div>
   )
