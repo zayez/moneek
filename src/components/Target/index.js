@@ -25,7 +25,7 @@ const Target = ({
     } else {
       setTargetValue("")
     }
-  }, [baseValue, targetCurrency, baseCurrency])
+  }, [baseValue, targetValue, targetCurrency, baseCurrency])
 
   return (
     <div className="target">
