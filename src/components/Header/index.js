@@ -5,7 +5,7 @@ function Header() {
     <div className="header">
       <div className="container">
         <h2 className="logo">
-          <a href="#">moneek</a>
+          <a href="/">moneek</a>
         </h2>
       </div>
     </div>
