@@ -6,16 +6,33 @@
 }
 
 .icon-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-wrapper {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .icon-wrapper {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1178px) {
+  .icon-wrapper {
+    margin-top: 30px;
+  }
 }
 
 .icon {
   border: 3px solid var(--blu-dark);
   border-radius: 10px;
   width: 5em;
-  position: absolute;
-  top: 15px;
-  right: 0;
   fill: var(--blu-dark);
   background: var(--white);
   z-index: 44;
