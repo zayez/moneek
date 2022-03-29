@@ -14,18 +14,21 @@ const Target = ({
   setTargetValue,
   setTargetCurrency,
 }) => {
-  useEffect(async () => {
-    const url = `${baseUrl}/${baseCurrency.toLowerCase()}/${targetCurrency.toLowerCase()}.json`
+  useEffect(() => {
+    const getData = async () => {
+      const url = `${baseUrl}/${baseCurrency.toLowerCase()}/${targetCurrency.toLowerCase()}.json`
 
-    if (baseValue !== "") {
-      const data = await fetchData(url)
-      const quote =
-        data[baseCurrency.toLowerCase()] || data[targetCurrency.toLowerCase()]
-      setTargetValue((baseValue * quote).toFixed(2))
-    } else {
-      setTargetValue("")
+      if (baseValue !== "") {
+        const data = await fetchData(url)
+        const quote =
+          data[baseCurrency.toLowerCase()] || data[targetCurrency.toLowerCase()]
+        setTargetValue((baseValue * quote).toFixed(2))
+      } else {
+        setTargetValue("")
+      }
     }
-  }, [baseValue, targetValue, targetCurrency, baseCurrency])
+    getData()
+  }, [baseValue, targetValue, targetCurrency, baseCurrency, setTargetValue])
 
   return (
     <div className="target">
