@@ -37,7 +37,6 @@ function App() {
         baseCurrency={baseCurrency}
         targetValue={targetValue}
         targetCurrency={targetCurrency}
-        targetCurrency={targetCurrency}
         setTargetValue={setTargetValue}
         setTargetCurrency={setTargetCurrency}
       />
